@@ -1,0 +1,718 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  overflow: hidden;
+}
+
+body {
+  background-color: rgb(234, 209, 159);
+  color: antiquewhite;
+  font-family: Josefin Sans;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+p {
+  color: #5f552c;
+  font-size: 21px;
+  padding: 20px;
+  margin: 10px auto;
+  width: 600px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  font-family: Great Vibes;
+  color: rgb(51, 21, 69);
+}
+
+h1 {
+  font-size: 80px;
+  padding: 40px;
+  border-bottom: solid 1px antiquewhite;
+}
+
+h2 {
+  font-size: 60px;
+  padding: 30px;
+}
+
+h3 {
+  font-size: 40px;
+  padding: 20px;
+}
+
+header {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(51, 21, 69);
+  color: white;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  -webkit-box-shadow: 1px 1px 10px 1px #000;
+  -moz-box-shadow: 1px 1px 10px 1px #000;
+  box-shadow: 1px 1px 10px 1px #000;
+  border-bottom: solid 1px rgb(78, 49, 95);
+  font-family: Amatic SC;
+  font-size: 20px;
+  transition: all .25s;
+}
+
+header nav {
+  height: 100%
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  height: 100%
+}
+
+header ul li {
+  margin: 10px;
+}
+
+header a {
+  text-decoration: none;
+  display: flex;
+  align-items: flex-start;
+  max-width: 500px;
+  padding: 0px 50px 0px 50px;
+  font-family: Josefin Sans;
+  text-transform: uppercase;
+}
+
+header a, a:link, a:visited {
+  color: #DEBE83;
+  color: #5f552c;
+}
+
+header.small {
+  height: 50px;
+  font-size: 16px;
+  transition: all .25s;
+}
+
+a:hover {
+  color: antiquewhite;
+}
+
+span.amp {
+  font-family: Baskerville;
+  font-style: italic;
+  font-size: 100px;
+  background-color: #7b76ab;
+  padding: 0px 15px 0px 12px;
+  border-radius: 100px;
+  border: solid 6px antiquewhite;
+  color: antiquewhite;
+  vertical-align: super;
+}
+
+header span.amp {
+  font-size: 40px;
+  padding: 0px 8px 0px 6px;
+  transition: all .25s;
+  border-width: 4px;
+  vertical-align: inherit;
+}
+
+header.small span.amp {
+  font-size: 24px;
+  padding: 0px 6px 0px 3px;
+  border-width: 2px;
+  transition: all .25s;
+}
+
+.logo {
+  font-size: 60px;
+  font-family: Great Vibes;
+  color: #DEBE83;
+}
+
+.logo:hover {
+  color: antiquewhite;
+}
+
+header.small .logo {
+  font-size: 24px;
+  transition: all .35s;
+}
+
+.parallax {
+  -webkit-perspective: 1px;
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective-origin-x: 100%;
+  perspective-origin-x: 100%;
+  scroll-behavior: smooth;
+}
+
+.parallax_layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform-origin-x: 100%;
+  transform-origin-x: 100%;
+}
+
+.parallax_layer-base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 4;
+}
+
+.parallax_layer-back {
+  -webkit-transform: translateZ(-1px) scale(2);
+  transform: translateZ(-1px) scale(2);
+  z-index: 3;
+}
+
+.parallax_group {
+  position: relative;
+  height: 100vh;
+  min-height: 800px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.dark-overlay {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+section::after, section::before {
+  left: 0;
+  right: 0;
+  content: "";
+  position: absolute;
+  border-bottom: solid 4px rgb(90, 53, 29);
+}
+
+.vertical_stripes-gold {
+  background-color: #d5b080;
+  background: repeating-linear-gradient(
+    to left,
+    #d5b080,
+    #dba967 12px,
+    #e3b87f 11px,
+    #eab978 20px
+  );
+  z-index: 6;
+}
+
+#first {
+  background: url(bridge-pic.jpg) no-repeat 0% 0%;
+  background-size: cover;
+}
+
+#second {
+  background: url(flying-kids.jpg) no-repeat 0% 0%;
+  background-size: cover;
+}
+
+#group3 {
+  background: url(mountain.jpg) no-repeat 0% 0%;
+  background-size: cover;
+}
+
+#party-kids {
+  background: url(party-kids.jpg) no-repeat 0% 0%;
+  background-size: cover;
+}
+
+#the-cutest-couple {
+  background: url(cute-couple.png) no-repeat 0% 0%;
+  background-size: cover;
+}
+
+#willy-b {
+  background: url(willy-b.jpg) no-repeat 0% 0%;
+  background-size: cover;
+}
+
+.cocky {
+  /*background: url(dancing-kids.jpg) no-repeat 50% 50% fixed;*/
+  background: url(willy-b.jpg) no-repeat 0% 0%;
+  background-size: cover;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  font-family: Great Vibes;
+}
+
+.title--top {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 80px;
+}
+
+.groom, .bride {
+  font-size: 140px;
+  margin: 10px;
+}
+
+.groom {
+  font-family: Amatic SC;
+}
+
+.bride {
+  font-family: Great Vibes;
+}
+
+.date {
+  font-size: 80px;
+  font-family: Great Vibes;
+  color: rgb(51, 21, 69);
+}
+
+.location {
+  font-size: 60px;
+  font-family: Amatic SC;
+  color: #DEBE83;
+}
+
+#wedding-callout {
+  position: relative;
+  transform: translate(-28%, 140%);
+  text-align: center;
+}
+
+#rsvp {
+  max-width: 700px;
+  padding: 10px 40px;
+  color: #5f552c;
+  font-family: Josefin Sans;
+  font-size: 24px;
+  visibility: hidden;
+  text-align: center;
+}
+
+#rsvp input[type="text"],
+#rsvp input[type="email"] {
+  background: transparent;
+  border: none;
+  border-bottom: solid 1px #5f552c;
+  padding: 10px;
+  margin: 5px;
+  font-family: Josefin Sans;
+  font-size: inherit;
+  width: 250px;
+}
+
+#rsvp input[type="text"]::placeholder-shown,
+#rsvp input[type="email"]::placeholder-shown {
+  font-size: 21px;
+}
+
+#rsvp input[type="text"]::-moz-placeholder,
+#rsvp input[type="email"]::-moz-placeholder
+{
+  font-size: 21px;
+}
+
+#rsvp h2 {
+  font-family: Josefin Sans;
+}
+
+#rsvp div {
+  padding: 10px 0;
+}
+
+#rsvp input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+#rsvp input[type="checkbox"] + label {
+  cursor: pointer;
+  text-align: left;
+  display: block;
+  margin: 5px auto;
+  font-size: inherit;
+  width: 500px;
+}
+
+#rsvp input[type="checkbox"] + label::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border: 3px solid #5f552c;
+  border-radius: 10px;
+  width: 21px;
+  height: 21px;
+  color: black;
+  font-family: Josefin Sans;
+  transition: background-color .2s;
+  float: left;
+  margin-right: 10px;
+  color: inherit;
+}
+
+#rsvp input[type="checkbox"] + label:first-of-type {
+  padding: 10px 0;
+}
+
+#rsvp input[type="checkbox"] + label:last-of-type {
+  padding-bottom: 10px;
+}
+
+#rsvp input[type="checkbox"]:checked + label::before {
+  content: "\2714";
+  text-align: center;
+}
+
+#rsvp input[type="checkbox"]:focus + label::before {
+  box-shadow: 2px 2px 10px 2px #68a7e4;
+  border-color: #68a7e4
+}
+
+#rsvp input[type="button"] {
+  display: block;
+  margin: 75px auto 0;
+  background-color: #5f552c;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: inherit;
+  color: antiquewhite;
+  border: solid 1px;
+  border-bottom: 4px solid antiquewhite;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: all .1s;
+}
+
+#rsvp input[type="button"]:hover {
+  color: #5f552c;
+  background-color: antiquewhite;
+  border-bottom: solid 2px #5f552c;
+}
+
+#rsvp input[type="button"]:active {
+  color: white;
+  background-color: #5f552c;
+  border-bottom: solid 2px #3f350c;
+}
+
+#rsvp input[type="button"]:disabled {
+  color: darkgray;
+  background-color: gray;
+}
+
+#rsvp select {
+  background: #5f552c;
+  width: 225px;
+  padding: 2px 5px;
+  font-size: 21px;
+  line-height: 1;
+  height: 35px;
+  color: antiquewhite;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#rsvp h2 div:last-of-type {
+  border-bottom: solid 2px antiquewhite;
+  padding-bottom: 20px;
+}
+
+#rsvp h2 div:first-of-type {
+  border-top: solid 2px antiquewhite;
+  padding-top: 20px;
+}
+
+#rsvp-additional-guests-family ul li {
+  display: inline;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#rsvp-additional-guests-family ul {
+  text-align: center;
+}
+
+#rsvp-additional-guests-family {
+  margin-top: 10px;
+}
+
+#rsvp-submission-message span{
+  background: #335133;
+  border: solid 4px #218C29;
+  color: antiquewhite;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 16px;
+  display: block;
+}
+
+#rsvp-submission-message ul {
+  list-style: inside;
+  background: #692121;
+  border: solid 4px #A51010;
+  color: antiquewhite;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 16px;
+}
+
+#rsvp textarea {
+  min-width: 100%;
+  min-height: 200px;
+  max-height: 400px;
+  max-width: 100%;
+  background-color: transparent;
+  border: solid 2px #5f552c;
+  border-radius: 10px;
+  display: none;
+  padding: 10px 10px 0;
+  font-family: inherit;
+  color: inherit;
+}
+
+#rsvp #rsvp-notes-checkbox + label {
+  margin-left: 0;
+}
+
+#rsvp #rsvp-notes-checkbox:hover + label {
+  color: antiquewhite;
+}
+
+#rsvp #rsvp-notes-checkbox + label::before {
+  content: "Something on your mind? Leave the couple a note!";
+  border: none;
+  width: 100%;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+#rsvp #rsvp-notes-checkbox:checked + label::before {
+  content: "Never mind, cancel the note.";
+  margin-left: -115px;
+
+}
+
+#rsvp-notes-checkbox:checked ~ textarea {
+  display: inherit;
+}
+
+.hidden--linear {
+  opacity: 0;
+  height: 0;
+  transition: opacity .2s linear, height .35s linear;
+}
+
+.show--ease-in {
+  opacity: 1;
+  height: 100%;
+  transition: all .4s ease-in;
+}
+
+.rsvp-detail {
+  font-size: 18px;
+  font-style: italic;
+}
+
+#map {
+  height: 150vh;
+}
+
+#map p {
+  margin: 20px auto 20px auto;
+}
+
+.google-maps iframe {
+  width: 100%;
+  min-height: 200px;
+  height: 400px;
+}
+
+footer.parallax_group {
+  min-height: 100px;
+  height: 100px;
+  background: #6B529B;
+  border-top: solid 5px #180836
+}
+
+footer span.small {
+  font-size: 18px;
+  font-family: Josefin Sans;
+}
+
+footer img {
+  height: 14px;
+  width: 16px;
+}
+
+.timeline, .wedding_party {
+  display: flex;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.timeline {
+  flex-direction: column;
+}
+
+.wedding_party {
+  flex-direction: row;
+}
+
+.timeline_item, .party_member {
+  height: 12vh;
+  width: 12vh;
+  background: antiquewhite;
+  margin: 10px;
+  padding: 10px;
+  border: solid 4px antiquewhite;
+  border-radius: 100%;
+}
+
+.timeline_item:after {
+  background: black;
+  content: "dsfsdf";
+  text-align: center;
+  display: block;
+}
+
+.timeline_item:nth-child(2n) {
+  align-self: flex-end;
+}
+
+.timeline_item:nth-child(2n+1) {
+  align-self: flex-start;
+}
+
+.card {
+  background-color: #ecd9b9;
+  border: solid 15px antiquewhite;
+  width: 700px;
+  font-size: 21px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0px 0px 25px #666;
+  padding: 40px;
+}
+
+.card h1 {
+  padding: 10px;
+}
+
+.card div {
+  color: #5f552c;
+}
+
+#registry a {
+  display: block;
+  text-align: center;
+  margin: 50px;
+}
+
+#last {
+  height: 800px;
+}
+
+#last .title {
+  font-family: Great Vibes;
+}
+
+.centered-items {
+  text-align: center;
+}
+
+/* begin mobile */
+@media all and (max-width: 320px) {
+  header {
+    height: 60px;
+    font-size: 14px;
+  }
+
+  header a, a:link, a:visited {
+    padding: 0;
+  }
+
+  .logo, header span.amp {
+    font-size: 18px;
+  }
+
+  header span.amp {
+    padding: 0px 4px 0px 2px;
+    border-width: 2px;
+    display: inline;
+  }
+
+  header.small span.amp, header.small .logo {
+    font-size: 16px;
+    padding: 0px 3px 0px 0px;
+    border-width: 2px;
+    transition: all .25s;
+  }
+
+  header.small {
+    height: 45px;
+    font-size: 12px;
+  }
+
+  .groom, .bride {
+    font-size: 60px;
+  }
+
+  .date {
+    padding-top: 20px;
+    font-size: 40px;
+  }
+
+  .location {
+    font-size: 30px;
+  }
+
+  #wedding-callout {
+    transform: translate(-50%, 25%);
+    left: 50%;
+  }
+
+  span.amp {
+    display: block;
+    font-size: 40px;
+    width: 40px;
+    margin: auto;
+    padding: 0px 5px 0px 2px;
+    border-radius: 100px;
+    border: solid 4px antiquewhite;
+  }
+}
+/* end mobile */

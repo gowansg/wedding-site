@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Stephen &amp; Dayna!</title>
+    <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC:700bold' rel='stylesheet' type='text/css' />
+    <link rel='stylesheet' href='/main.css' type='text/css' />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#rsvp">RSVP</a></li>
+          <li><a href="#map">Wedding</a></li>
+          <li>
+            <a href=#>
+              <span class="logo">
+                S <span class="amp">&amp;</span> D
+              </span>
+            </a>
+          </li>
+          <li><a href="#pics">Pics</a></li>
+          <li><a href="#registry">Registry</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="parallax">
+      <section class="parallax_group dark-overlay">
+        <div id="first" class="parallax_layer parallax_layer-back"></div>
+        <div class="parallax_layer parallax_layer-base">
+          <div id="wedding-callout">
+              <span class="groom">Stephen</span>
+              <span class="amp">&amp;</span>
+              <span class="bride">Dayna</span>
+            <div class="date">June 25th, 2016</div>
+            <div class="location">New Orleans, LA</div>
+          </div>
+        </div>
+      </section>
+      <section class="parallax_group vertical_stripes-gold">
+        <div class="parallax_layer parallax_layer-base">
+          <div class="card">
+            <h1>We're getting married, finally!</h1>
+            <p>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="parallax_group dark-overlay">
+        <div id="party-kids" class="parallax_layer parallax_layer-back">
+        </div>
+      </section>
+<!--      <section class="parallax_group vertical_stripes-gold">
+        <div class="parallax_layer parallax_layer-base">
+          <div class="title--top">
+            &mdash; Our story &mdash;
+          </div>
+          <ol class="timeline">
+            <li class="timeline_item"></li>
+            <li class="timeline_item"></li>
+            <li class="timeline_item"></li>
+            <li class="timeline_item"></li>
+            <li class="timeline_item"></li>
+            <li class="timeline_item"></li>
+            <li class="timeline_item"></li>
+          </ol>
+        </div>
+      </section>
+      <section class="parallax_group">
+        <div id="second" class="parallax_layer parallax_layer-back">
+        </div>
+        <div class="parallax_layer parallax_layer-fore">
+          <div class="title">Come celebrate with us!</div>
+        </div>
+      </section> -->
+      <section class="parallax_group vertical_stripes-gold">
+        <div class="parallax_layer parallax_layer-base">
+          <form id="rsvp" class="card" method="">
+            <h1>RSVP</h1>
+            <div>
+              I, <input name="guestNameInput" tabindex="1" id="rsvp-guest-name-input" type="text" placeholder="your name goes here"></input>,
+              <select name="invitationStatus" tabindex="2">
+                <option value="-1">regretfully decline</option>
+                <option value="-2">readily decline</option>
+                <option selected value="1">joyfully accept</option>
+                <option value="2">reluctantly accept</option>
+              </select>
+              your invitation.
+            </div>
+            <div id="rsvp-additional-details">I plan on bringing
+              <select name="guestType" tabindex="3" id="rsvp-additional-guests">
+                <option selected value="1">just my wonderful self</option>
+                <option value="2">a date</option>
+                <option value="3">my family</option>
+              </select>.
+              <div id="rsvp-additional-guests-family" style="display: none;">
+                Their names are:
+                <ul>
+                  <li><input name="familyMember1" tabindex="4" type="text" placeholder="family member #1"></input></li>
+                  <li><input name="familyMember2" tabindex="5" type="text" placeholder="family member #2"></input></li>
+                  <li><input name="familyMember3" tabindex="6" type="text" placeholder="family member #3"></input></li>
+                  <li><input name="familyMember4" tabindex="7" type="text" placeholder="family member #4"></input></li>
+                  <li><input name="familyMember5" tabindex="8" type="text" placeholder="family member #5"></input></li>
+                  <li><input name="familyMember6" tabindex="9" type="text" placeholder="family member #6"></input></li>
+                </ul>
+              </div>
+              <div id="rsvp-additional-guests-date" style="display: none;">
+                My date's name is:
+                <input name="dateGuestName" tabindex="10" type="text" placeholder="your lovely date's name "></input>.
+              </div>
+              <div>
+                <div>I plan on attending:</div>
+                <input tabindex="11" id="rehearsal-checkbox" type="checkbox" name="rehearsalCheckbox" />
+                <label for="rehearsal-checkbox">The rehearsal dinner &mdash; <span class="rsvp-detail">7:00 PM Friday, June 24th</span></label>
+                <input tabindex="12" id="wedding-checkbox" type="checkbox" name="weddingCheckbox" />
+                <label for="wedding-checkbox">The wedding &mdash; <span class="rsvp-detail">6:30 PM Saturday, June 25th</span></label>
+              </div>
+              <div>
+                Oh, and you already know, it's not a <span id="rsvp-guest-name"></span> party until
+                <input name="songRequest" tabindex="13" placeholder="a song that makes you dance" type="text"></input>
+                starts playing! So make sure the DJ has that on the playlist. If you need to contact me send an e-mail to
+                <input tabindex="14" type="email" name="email" placeholder="your-email@email.something"></input>
+              </div>
+            </div>
+            <div id="rsvp-notes-section">
+              <input tabindex="15" id="rsvp-notes-checkbox" type="checkbox"/>
+              <label for="rsvp-notes-checkbox"></label>
+              <textarea tabindex="16" name="rsvpNotes" id="rsvp-notes">
+              </textarea>
+            </div>
+            <div id="rsvp-submission-message"></div>
+            <input id="rsvp-submit-button" tabindex="15" type="button" value="Submit Response"></input>
+          </form>
+        </div>
+      </section>
+      <section class="parallax_group dark-overlay">
+        <div id="group3" class="parallax_layer parallax_layer-back">
+        </div>
+      </section>
+      <section id="registry" class="parallax_group vertical_stripes-gold">
+        <div class="parallax_layer parallax_layer-base">
+          <div class="card">
+            <h1>Registry</h1>
+            <p>Your presence is the best gift of all. Really! It is.  We know that many of you will
+              be traveling from out of town, which we appreciate very much, and although we like
+              new tableware we'd much prefer your company out on the dance floor.
+            </p>
+            <p>
+              However, for those of you gift-givers out there&mdash;why are you still friends with us?&mdash;we've
+              come up with a list of items that we think will help to turn our house into a home.
+            </p>
+            <div>
+              <a href="https://www.amazon.com/wedding/registry/2LUTW2D5QUPA9"><img src="amazon-registry.png" /></a>
+              <a href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=543269357&pwsurl="><img src="bb&amp;b-registry.png"/></a>
+            </div>
+          </div>
+        </div>
+      </section>
+<!--      <section class="parallax_group vertical_stripes-gold">
+        <div class="parallax_layer parallax_layer-base">
+          <div class="title--top">
+            The Wedding Party
+          </div>
+          <ol class="wedding_party">
+            <li class="party_member"></li>
+            <li class="party_member"></li>
+            <li class="party_member"></li>
+            <li class="party_member"></li>
+            <li class="party_member"></li>
+            <li class="party_member"></li>
+            <li class="party_member"></li>
+          </ol>
+        </div>
+      </section>
+      <section class="parallax_group">
+        <div class="cocky parallax_layer parallax_layer-back">
+        </div>
+        <div class="parallax_layer parallax_layer-base">
+          <div class="title">Stuff &amp; Things!</div>
+        </div>
+      </section> -->
+      <section class="parallax_group dark-overlay">
+        <div id="willy-b" class="parallax_layer parallax_layer-back">
+        </div>
+        <div class="parallax_layer parallax_layer-base">
+          <div class="title"></div>
+        </div>
+      </section>
+      <section id="map" class="parallax_group vertical_stripes-gold">
+        <div class="parallax_layer parallax_layer-base">
+          <div class="card">
+            <h1>The Wedding</h1>
+            <div>
+              <ul class="centered-items">
+                <li>
+                  <h3>Rehearsal Dinner</h3>
+                </li>
+                <li>
+                  <a href="http://raceandreligious.com/" target="_blank">Race &amp; Religious</a>
+                </li>
+                <li>
+                  6:30 PM Friday, June 24th
+                </li>
+                <li>
+                  510 Race St, New Orleans, LA 70130
+                </li>
+                <li>
+                  <h3>Ceremony &amp; Reception</h3>
+                </li>
+                <li>
+                  <a href="http://raceandreligious.com/" target="_blank">Race &amp; Religious</a>
+                </li>
+                <li>
+                  7:00 PM Saturday, June 25th
+                </li>
+                <li>
+                  510 Race St, New Orleans, LA 70130
+                </li>
+              </ul>
+              <p>
+                New Orleans is a unique place, and it's a city that we both love very much.
+                We think you'll have a wonderful time while you're here, and you'll eat some of the best
+                food you've ever tasted.
+              </p>
+              <p>
+                Take a look at the map below for some of our favorite places to eat,
+                watering holes to kick-back at, and attractions to see around the city.
+              </p>
+            </div>
+            <div class="google-maps">
+              <iframe src="https://www.google.com/maps/d/embed?mid=zucl0u8JOnjQ.kzWPGz5X_jTE"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="last" class="parallax_group">
+        <div id="the-cutest-couple" class="parallax_layer">
+        </div>
+        <div class="parallax_layer parallax_layer-base dark-overlay">
+          <div class="title">Laissez les bons temps rouler!</div>
+        </div>
+      </section>
+      <footer class="parallax_group">
+        <span class="title small">Made with lots of <img src="red-heart.svg" /> for my best friend and soon-to-be bride: Dayners.</span>
+      </footer>
+    </div>
+    <script type="text/javascript" src="home.js"></script>
+    <script type="text/javascript" async src="rsvp.js"></script>
+  </body>
+</html>

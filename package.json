@@ -1,0 +1,32 @@
+{
+  "name": "wedding-site",
+  "version": "1.0.0",
+  "description": "http://www.staynerslegowan.com",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gowansg/wedding-site"
+  },
+  "keywords": [
+    "stayners",
+    "legowan"
+  ],
+  "author": "Stephen Gowan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gowansg/wedding-site/issues"
+  },
+  "homepage": "https://github.com/gowansg/wedding-site",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "mongodb": "^2.1.18",
+    "sendgrid": "^2.0.0"
+  },
+  "engines": {
+    "node": "4.4.1"
+  }
+}
