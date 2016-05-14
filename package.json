@@ -22,11 +22,14 @@
   "homepage": "https://github.com/gowansg/wedding-site",
   "dependencies": {
     "body-parser": "^1.15.0",
+    "compression": "^1.6.1",
     "express": "^4.13.4",
     "mongodb": "^2.1.18",
-    "sendgrid": "^2.0.0"
+    "sendgrid": "^2.0.0",
+    "serve-static": "^1.10.2"
   },
   "engines": {
     "node": "4.4.1"
-  }
+  },
+  "devDependencies": {}
 }

@@ -11,6 +11,7 @@ body {
   background-color: rgb(234, 209, 159);
   color: antiquewhite;
   font-family: Josefin Sans;
+  font-size: 16px;
 }
 
 ol, ul {
@@ -19,11 +20,7 @@ ol, ul {
 
 p {
   color: #5f552c;
-  font-size: 21px;
-  padding: 20px;
-  margin: 10px auto;
-  width: 600px;
-  line-height: 30px;
+  padding: 10px;
   letter-spacing: 1px;
 }
 
@@ -34,28 +31,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 3.75em;
   padding: 40px;
   border-bottom: solid 1px antiquewhite;
 }
 
 h2 {
-  font-size: 60px;
+  font-size: 3.25em;
   padding: 30px;
 }
 
 h3 {
-  font-size: 40px;
+  font-size: 2.75em;
   padding: 20px;
 }
 
 header {
+  height: 3em;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
   background-color: rgb(51, 21, 69);
   color: white;
-  height: 100px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -68,7 +64,6 @@ header {
   box-shadow: 1px 1px 10px 1px #000;
   border-bottom: solid 1px rgb(78, 49, 95);
   font-family: Amatic SC;
-  font-size: 20px;
   transition: all .25s;
 }
 
@@ -78,36 +73,25 @@ header nav {
 
 header ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 0;
   margin: 0;
   height: 100%
 }
 
-header ul li {
-  margin: 10px;
-}
-
 header a {
   text-decoration: none;
   display: flex;
   align-items: flex-start;
-  max-width: 500px;
-  padding: 0px 50px 0px 50px;
   font-family: Josefin Sans;
   text-transform: uppercase;
+  font-size: .75em;
 }
 
 header a, a:link, a:visited {
   color: #DEBE83;
   color: #5f552c;
-}
-
-header.small {
-  height: 50px;
-  font-size: 16px;
-  transition: all .25s;
 }
 
 a:hover {
@@ -117,32 +101,25 @@ a:hover {
 span.amp {
   font-family: Baskerville;
   font-style: italic;
-  font-size: 100px;
   background-color: #7b76ab;
-  padding: 0px 15px 0px 12px;
-  border-radius: 100px;
-  border: solid 6px antiquewhite;
+  padding: 0px 10px 0px 6px;
+  border-radius: 100%;
+  border: solid 4px antiquewhite;
   color: antiquewhite;
   vertical-align: super;
+  font-size: 3em;
 }
 
 header span.amp {
-  font-size: 40px;
-  padding: 0px 8px 0px 6px;
-  transition: all .25s;
-  border-width: 4px;
-  vertical-align: inherit;
-}
-
-header.small span.amp {
-  font-size: 24px;
-  padding: 0px 6px 0px 3px;
+  padding: 0px 6px 0px 4px;
   border-width: 2px;
-  transition: all .25s;
+  display: inline;
+  vertical-align: inherit;
+  font-size: inherit;
 }
 
 .logo {
-  font-size: 60px;
+  font-size: 2em;
   font-family: Great Vibes;
   color: #DEBE83;
 }
@@ -151,9 +128,37 @@ header.small span.amp {
   color: antiquewhite;
 }
 
-header.small .logo {
-  font-size: 24px;
-  transition: all .35s;
+.groom, .bride {
+  font-size: 5em;
+  margin: 10px;
+}
+
+.groom {
+  font-family: Amatic SC;
+}
+
+.bride {
+  font-family: Great Vibes;
+}
+
+.date {
+  font-size: 2em;
+  font-family: Great Vibes;
+  color: rgb(51, 21, 69);
+}
+
+.location {
+  font-size: 2em;
+  font-family: Amatic SC;
+  color: #DEBE83;
+}
+
+#wedding-callout {
+  position: absolute;
+  text-align: center;
+  bottom: 30%;
+  background-color: rgba(255, 255, 255, .5);
+  width: 100%;
 }
 
 .parallax {
@@ -222,38 +227,27 @@ section::after, section::before {
 }
 
 #first {
-  background: url(bridge-pic.jpg) no-repeat 0% 0%;
-  background-size: cover;
-}
-
-#second {
-  background: url(flying-kids.jpg) no-repeat 0% 0%;
+  background: url(bridge-pic-320w.jpg) no-repeat 50% 0%;
   background-size: cover;
 }
 
 #group3 {
-  background: url(mountain.jpg) no-repeat 0% 0%;
+  background: url(mountain-320w.jpg) no-repeat 52% 0%;
   background-size: cover;
 }
 
 #party-kids {
-  background: url(party-kids.jpg) no-repeat 0% 0%;
+  background: url(party-kids-320w.jpg) no-repeat 60% 0%;
   background-size: cover;
 }
 
 #the-cutest-couple {
-  background: url(cute-couple.png) no-repeat 0% 0%;
+  background: url(cute-couple-320w.jpg) no-repeat 50% 0%;
   background-size: cover;
 }
 
 #willy-b {
-  background: url(willy-b.jpg) no-repeat 0% 0%;
-  background-size: cover;
-}
-
-.cocky {
-  /*background: url(dancing-kids.jpg) no-repeat 50% 50% fixed;*/
-  background: url(willy-b.jpg) no-repeat 0% 0%;
+  background: url(flying-kids-320w.jpg) no-repeat 70% 0%;
   background-size: cover;
 }
 
@@ -262,7 +256,7 @@ section::after, section::before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 80px;
+  font-size: 3.75em;
   font-family: Great Vibes;
 }
 
@@ -271,48 +265,17 @@ section::after, section::before {
   top: 0;
   left: 50%;
   transform: translate(-50%, 50%);
-  font-size: 80px;
-}
-
-.groom, .bride {
-  font-size: 140px;
-  margin: 10px;
-}
-
-.groom {
-  font-family: Amatic SC;
-}
-
-.bride {
-  font-family: Great Vibes;
-}
-
-.date {
-  font-size: 80px;
-  font-family: Great Vibes;
-  color: rgb(51, 21, 69);
-}
-
-.location {
-  font-size: 60px;
-  font-family: Amatic SC;
-  color: #DEBE83;
-}
-
-#wedding-callout {
-  position: relative;
-  transform: translate(-28%, 140%);
-  text-align: center;
+  font-size: 3.75em;
 }
 
 #rsvp {
   max-width: 700px;
+  width: 100%;
   padding: 10px 40px;
   color: #5f552c;
   font-family: Josefin Sans;
-  font-size: 24px;
   visibility: hidden;
-  text-align: center;
+  text-align: left;
 }
 
 #rsvp input[type="text"],
@@ -324,18 +287,19 @@ section::after, section::before {
   margin: 5px;
   font-family: Josefin Sans;
   font-size: inherit;
-  width: 250px;
+  max-width: 250px;
+  width: 12em;
 }
 
 #rsvp input[type="text"]::placeholder-shown,
 #rsvp input[type="email"]::placeholder-shown {
-  font-size: 21px;
+  font-size: .75em;
 }
 
 #rsvp input[type="text"]::-moz-placeholder,
 #rsvp input[type="email"]::-moz-placeholder
 {
-  font-size: 21px;
+  font-size: .75em;
 }
 
 #rsvp h2 {
@@ -343,7 +307,7 @@ section::after, section::before {
 }
 
 #rsvp div {
-  padding: 10px 0;
+  padding: 10px 5px;
 }
 
 #rsvp input[type="checkbox"] {
@@ -357,7 +321,8 @@ section::after, section::before {
   display: block;
   margin: 5px auto;
   font-size: inherit;
-  width: 500px;
+  max-width: 500px;
+  width: 90%;
 }
 
 #rsvp input[type="checkbox"] + label::before {
@@ -369,22 +334,20 @@ section::after, section::before {
   left: 0;
   border: 3px solid #5f552c;
   border-radius: 10px;
-  width: 21px;
-  height: 21px;
+  max-width: 21px;
+  max-height: 21px;
+  width: 1em;
+  height: 1em;
   color: black;
   font-family: Josefin Sans;
   transition: background-color .2s;
   float: left;
-  margin-right: 10px;
+  margin-right: 5px;
   color: inherit;
 }
 
 #rsvp input[type="checkbox"] + label:first-of-type {
   padding: 10px 0;
-}
-
-#rsvp input[type="checkbox"] + label:last-of-type {
-  padding-bottom: 10px;
 }
 
 #rsvp input[type="checkbox"]:checked + label::before {
@@ -402,7 +365,7 @@ section::after, section::before {
   margin: 75px auto 0;
   background-color: #5f552c;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: .95em;
   font-family: inherit;
   color: antiquewhite;
   border: solid 1px;
@@ -431,11 +394,12 @@ section::after, section::before {
 
 #rsvp select {
   background: #5f552c;
-  width: 225px;
+  max-width: 225px;
+  width: 12em;
   padding: 2px 5px;
-  font-size: 21px;
+  font-size: .95em;
   line-height: 1;
-  height: 35px;
+  height: 1.5em;
   color: antiquewhite;
   cursor: pointer;
   -webkit-appearance: none;
@@ -464,8 +428,13 @@ section::after, section::before {
   text-align: center;
 }
 
-#rsvp-additional-guests-family {
-  margin-top: 10px;
+#rsvp-additional-guests-family,
+#rsvp-additional-guests-date,
+#rsvp #rsvp-events,
+#rsvp #rsvp-song-request
+ {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 #rsvp-submission-message span{
@@ -474,7 +443,7 @@ section::after, section::before {
   color: antiquewhite;
   border-radius: 20px;
   padding: 20px;
-  font-size: 16px;
+  font-size: .85em;
   display: block;
 }
 
@@ -485,21 +454,20 @@ section::after, section::before {
   color: antiquewhite;
   border-radius: 20px;
   padding: 20px;
-  font-size: 16px;
+  font-size: .75em;
 }
 
 #rsvp textarea {
-  min-width: 100%;
-  min-height: 200px;
-  max-height: 400px;
-  max-width: 100%;
+  min-height: 2.5em;
+  max-height: 3.5em;
+  width: 100%;
   background-color: transparent;
   border: solid 2px #5f552c;
   border-radius: 10px;
   display: none;
-  padding: 10px 10px 0;
   font-family: inherit;
   color: inherit;
+  margin: 0 auto;
 }
 
 #rsvp #rsvp-notes-checkbox + label {
@@ -514,14 +482,14 @@ section::after, section::before {
   content: "Something on your mind? Leave the couple a note!";
   border: none;
   width: 100%;
+  max-width: 100%;
   text-decoration: underline;
   margin-bottom: 10px;
 }
 
 #rsvp #rsvp-notes-checkbox:checked + label::before {
   content: "Never mind, cancel the note.";
-  margin-left: -115px;
-
+  margin-left: -50px;
 }
 
 #rsvp-notes-checkbox:checked ~ textarea {
@@ -541,7 +509,7 @@ section::after, section::before {
 }
 
 .rsvp-detail {
-  font-size: 18px;
+  font-size: .5em;
   font-style: italic;
 }
 
@@ -555,25 +523,30 @@ section::after, section::before {
 
 .google-maps iframe {
   width: 100%;
-  min-height: 200px;
-  height: 400px;
+  min-height: 4em;
+  height: 25em;
+  display: none;
+}
+
+.google-maps div {
+  text-align: center;
 }
 
 footer.parallax_group {
-  min-height: 100px;
-  height: 100px;
+  min-height: 3em;
+  max-height: 100px;
   background: #6B529B;
   border-top: solid 5px #180836
 }
 
 footer span.small {
-  font-size: 18px;
+  font-size: .9em;
   font-family: Josefin Sans;
 }
 
 footer img {
-  height: 14px;
-  width: 16px;
+  height: .75em;
+  width: .8em;
 }
 
 .timeline, .wedding_party {
@@ -618,8 +591,8 @@ footer img {
 .card {
   background-color: #ecd9b9;
   border: solid 15px antiquewhite;
-  width: 700px;
-  font-size: 21px;
+  max-width: 700px;
+  width: 100%;
   transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
@@ -636,6 +609,20 @@ footer img {
   color: #5f552c;
 }
 
+ #amazon-registry-img,
+ #bbandb-registry-img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+#amazon-registry-img {
+  max-width: 267px;
+}
+
+#bbandb-registry-img {
+  max-width: 173px;
+}
+
 #registry a {
   display: block;
   text-align: center;
@@ -643,7 +630,8 @@ footer img {
 }
 
 #last {
-  height: 800px;
+  max-height: 800px;
+  height: 100vh;
 }
 
 #last .title {
@@ -654,65 +642,187 @@ footer img {
   text-align: center;
 }
 
-/* begin mobile */
-@media all and (max-width: 320px) {
-  header {
-    height: 60px;
-    font-size: 14px;
-  }
-
-  header a, a:link, a:visited {
-    padding: 0;
-  }
-
-  .logo, header span.amp {
-    font-size: 18px;
-  }
-
-  header span.amp {
-    padding: 0px 4px 0px 2px;
-    border-width: 2px;
-    display: inline;
-  }
-
-  header.small span.amp, header.small .logo {
-    font-size: 16px;
-    padding: 0px 3px 0px 0px;
-    border-width: 2px;
-    transition: all .25s;
+@media all and (min-height: 600px) {
+  #wedding-callout {
+    bottom: 20%;
   }
 
   header.small {
-    height: 45px;
-    font-size: 12px;
+    height: 2.5em;
+    font-size: .95em;
+    transition: all .25s;
   }
 
-  .groom, .bride {
-    font-size: 60px;
+  header.small span.amp,
+  header.small .logo {
+    padding: 0px 4px 0px 3px;
+    border-width: 2px;
+    transition: all .25s;
   }
+}
 
-  .date {
-    padding-top: 20px;
-    font-size: 40px;
-  }
-
-  .location {
-    font-size: 30px;
+@media all and (min-height: 700px) {
+  header a {
+    max-height: 3em;
   }
 
   #wedding-callout {
-    transform: translate(-50%, 25%);
-    left: 50%;
+    bottom: 10%;
   }
 
-  span.amp {
-    display: block;
-    font-size: 40px;
-    width: 40px;
-    margin: auto;
-    padding: 0px 5px 0px 2px;
-    border-radius: 100px;
-    border: solid 4px antiquewhite;
+  #first {
+    background: url(bridge-pic-700h.jpg) no-repeat 50% 0%;
+    background-size: cover;
+  }
+
+  #party-kids {
+    background: url(party-kids-700h.jpg) no-repeat 60% 0%;
+    background-size: cover;
+  }
+
+  #group3 {
+    background: url(mountain-700h.jpg) no-repeat 52% 0%;
+    background-size: cover;
+  }
+
+  #willy-b {
+    background: url(flying-kids-700h.jpg) no-repeat 70% 0%;
+    background-size: cover;
+  }
+
+  #the-cutest-couple {
+    background: url(cute-couple-700h.jpg) no-repeat 50% 0%;
+    background-size: cover;
   }
 }
-/* end mobile */
+
+@media all and (min-width: 800px) {
+  body {
+    font-size: 22px;
+  }
+
+  header {
+    font-size: 1.25em;
+  }
+
+  header a {
+    padding: 0 1em;
+  }
+
+  #first {
+    background: url(bridge-pic-800w.jpg) no-repeat 50% 0%;
+    background-size: cover;
+  }
+
+  #party-kids {
+    background: url(party-kids-800w.jpg) no-repeat 60% 0%;
+    background-size: cover;
+  }
+
+  #group3 {
+    background: url(mountain-800w.jpg) no-repeat 52% 0%;
+    background-size: cover;
+  }
+
+  #willy-b {
+    background: url(willy-b-800w.jpg) no-repeat 60% 0%;
+    background-size: cover;
+  }
+
+  #the-cutest-couple {
+    background: url(cute-couple-800w.jpg) no-repeat 50% 0%;
+    background-size: cover;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  body {
+    font-size: 24px;
+  }
+
+  header ul {
+    justify-content: center;
+  }
+
+  header ul li {
+    margin: 10px;
+  }
+
+  header a {
+    padding: 0 2em;
+  }
+
+  #wedding-callout {
+    transform: translate(0%,-50%);
+    background: transparent;
+    width: 50%;
+  }
+
+  #first {
+    background: url(bridge-pic-1000w.jpg) no-repeat 100% 0%;
+    background-size: cover;
+  }
+
+  #party-kids {
+    background: url(party-kids-1000w.jpg) no-repeat 60% 0%;
+    background-size: cover;
+  }
+
+  #group3 {
+    background: url(mountain-1000w.jpg) no-repeat 52% 0%;
+    background-size: cover;
+  }
+
+  #willy-b {
+    background: url(willy-b-1000w.jpg) no-repeat 60% 0%;
+    background-size: cover;
+  }
+
+  #the-cutest-couple {
+    background: url(cute-couple-1000w.jpg) no-repeat 50% 0%;
+    background-size: cover;
+  }
+
+  .google-maps iframe {
+    display: block;
+  }
+
+  .google-maps a {
+    display: none;
+  }
+}
+
+@media all and (min-width: 1500px) {
+  body {
+    font-size: 26px;
+  }
+
+  header a {
+    max-width: 500px;
+  }
+
+  #first {
+    background: url(bridge-pic-1500w.jpg) no-repeat 50% 0%;
+    background-size: cover;
+  }
+
+  #party-kids {
+    background: url(party-kids-1500w.jpg) no-repeat 60% 0%;
+    background-size: cover;
+  }
+
+  #group3 {
+    background: url(mountain-1500w.jpg) no-repeat 52% 0%;
+    background-size: cover;
+  }
+
+  #willy-b {
+    background: url(willy-b-1500w.jpg) no-repeat 60% 0%;
+    background-size: cover;
+  }
+
+  #the-cutest-couple {
+    background: url(cute-couple.jpg) no-repeat 50% 0%;
+    background-size: cover;
+  }
+}

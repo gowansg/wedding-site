@@ -4,13 +4,16 @@ let express = require('express');
 let app = express();
 let MongoClient = require('mongodb').MongoClient;
 let bodyParser = require('body-parser');
+let compression = require('compression');
+let serveStatic = require('serve-static');
 let sendgrid = require('sendgrid')(process.env.SENDGRID_APIKEY);
 
-app.use(express.static(__dirname + '/public'));
+app.use(compression());
+app.use(serveStatic(`${__dirname}/public`));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/main.html');
+  res.sendFile(`${__dirname}/main.html`);
 });
 
 app.post('/rsvp', (req, res) => {

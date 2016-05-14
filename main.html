@@ -119,17 +119,17 @@
                 My date's name is:
                 <input name="dateGuestName" tabindex="10" type="text" placeholder="your lovely date's name "></input>.
               </div>
-              <div>
-                <div>I plan on attending:</div>
+              <div id="rsvp-events">
+                I plan on attending:
                 <input tabindex="11" id="rehearsal-checkbox" type="checkbox" name="rehearsalCheckbox" />
                 <label for="rehearsal-checkbox">The rehearsal dinner &mdash; <span class="rsvp-detail">7:00 PM Friday, June 24th</span></label>
                 <input tabindex="12" id="wedding-checkbox" type="checkbox" name="weddingCheckbox" />
                 <label for="wedding-checkbox">The wedding &mdash; <span class="rsvp-detail">6:30 PM Saturday, June 25th</span></label>
               </div>
-              <div>
-                Oh, and you already know, it's not a <span id="rsvp-guest-name"></span> party until
+              <div id="rsvp-song-request">
+                <div>Oh, and you already know, it's not a <span id="rsvp-guest-name"></span> party until</div>
                 <input name="songRequest" tabindex="13" placeholder="a song that makes you dance" type="text"></input>
-                starts playing! So make sure the DJ has that on the playlist. If you need to contact me send an e-mail to
+                <div>starts playing! So make sure the DJ has that on the playlist. If you need to contact me send an e-mail to</div>
                 <input tabindex="14" type="email" name="email" placeholder="your-email@email.something"></input>
               </div>
             </div>
@@ -162,10 +162,10 @@
             </p>
             <div>
               <a href="https://www.amazon.com/wedding/registry/2LUTW2D5QUPA9" target="_blank">
-                <img src="amazon-registry.png" />
+                <img id="amazon-registry-img" src="amazon-registry.png" />
               </a>
               <a href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=543269357&pwsurl=" target="_blank">
-                <img src="bb&amp;b-registry.png"/>
+                <img id="bbandb-registry-img" src="bb&amp;b-registry.png"/>
               </a>
             </div>
           </div>
@@ -243,6 +243,9 @@
               </p>
             </div>
             <div class="google-maps">
+              <div>
+                <a href="https://www.google.com/maps/d/viewer?mid=1M5d1oSGCnPobQv80zWPGz5X_jTE" target="_blank">Take a look at our map</a>
+              </div>
               <iframe src="https://www.google.com/maps/d/embed?mid=zucl0u8JOnjQ.kzWPGz5X_jTE"></iframe>
             </div>
           </div>
