@@ -1,0 +1,24 @@
+{
+  "name": "wedding-site",
+  "scripts": {
+  },
+  "env": {
+    "SENDGRID_APIKEY": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "mongolab",
+    "sendgrid"
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs#v90"
+    }
+  ]
+}
