@@ -12,6 +12,7 @@ body {
   color: antiquewhite;
   font-family: Josefin Sans;
   font-size: 16px;
+  transform: translateZ(0);
 }
 
 ol, ul {
